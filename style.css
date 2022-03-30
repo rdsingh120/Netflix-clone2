@@ -1,0 +1,277 @@
+:root {
+    --primary-color: #e50914
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 82vh;
+    position: relative;
+    background: url(images/background.jpg) no-repeat center/cover;
+    /* background-color: rgb(116, 114, 114);
+    background-blend-mode: multiply; */
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0, .45);
+    box-shadow: inset 30px 20px 250px #000, inset -30px -20px 250px #000;
+
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img {
+    width: 210px;
+    position: absolute;
+    top: -10%;
+    left: 2%;
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 45%;
+    right: 2%;
+}
+
+.showcase-top select {
+    position: absolute;
+    top: 45%;
+    right: 9%;
+    padding: .4rem 1.3rem;
+    background-color: transparent;
+    color: #fff;
+}
+
+.lang-option {
+    background-color: rgb(170, 170, 170);
+}
+
+
+.showcase-content {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 150px;
+    z-index: 2;
+}
+
+.showcase-content h1 {
+    font-weight: bold;
+    font-size: 4rem;   
+    line-height: 1.2;
+}
+
+.showcase-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+#ready-to-watch-line {
+    font-size: 1.2rem;
+}
+
+.email-box {
+    display: flex;
+    padding: 2rem 2.1rem;
+    border: none;
+    margin-top: -.8em;
+}
+
+.email-box input {
+    padding: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: .4rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-right: .5rem;
+    outline: none;
+    border-radius: 2px;
+}
+
+.btn :hover {
+    opacity: .9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+}
+
+hr {
+    height: .5rem;
+    background-color: #222222;
+    border: 2px solid #222222;
+    box-sizing: border-box;
+}
+
+
+
+.container h1, .faq-title{
+    font-weight: bold;
+    font-size: 3rem;   
+    line-height: 1.2;
+    color: #fff;
+    
+}
+
+.container p {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.container1, .container2, .container3, .container4  {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10%;
+}
+.container1-img, .container2-img, .container3-img, .container4-img {
+    position: relative;
+    min-width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.container img {
+    position: relative;
+    z-index: 2;
+}
+
+.container1-head, .container2-head, .container3-head, .container4-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container1-vid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    top: 21%;
+    left: 13%;
+    z-index: 1;    
+}
+
+.downloading {
+    border: 2px solid white;
+    position: absolute;
+    left: 18%;
+    bottom: 6%;
+    align-items: center;
+    width: 65%;
+    min-width: 15em;
+    border-radius: 0.75em;
+    background-color: black;
+    z-index: 3;
+}
+
+.downloading img {
+    width: 115px;    
+    padding: 20px;
+}
+
+.downloading-text {
+    position: absolute;
+    top: 55px;
+    right: 225px
+}
+
+.text-0 {
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+}
+
+.text-1 {
+    color: #3f65ee
+}
+
+.image2 {
+    position: absolute;
+    top: 20px;
+    right: 7px;
+}
+
+.container2-vid {
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    z-index: 1;
+}
+
+.faq-title {
+    text-align: center;
+    margin-top: 4rem;
+}
+
